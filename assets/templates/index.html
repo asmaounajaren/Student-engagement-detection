@@ -1,0 +1,36 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block contents%}
+
+<div class="home">
+		<div class="home_slider_container">
+
+			<!-- Home Slider -->
+			<div class="owl-carousel owl-theme home_slider">
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style=" background: 
+					linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), /* Overlay */
+					url({% static 'images/home_slider_1.jpg' %}) no-repeat center center; "></div>
+					<div class="home_slider_content">
+						<div class="container">
+							<div class="row">
+								<div class="col text-center">
+									<div class="home_slider_title">Students Engagment</div>
+									<div class="home_slider_subtitle">by Image Processing and Machine Learning</div>
+									<div class="home_slider_form_container">
+										<p>
+                                            <font color="white">La détection du niveau d'engagement des étudiants dans les environnements d'apprentissage en ligne est devenue un enjeu majeur avec la montée en puissance de l'éducation numérique. </font>
+                                        </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{%endblock%}

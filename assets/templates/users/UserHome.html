@@ -1,0 +1,36 @@
+{%extends 'users/userbase.html'%}
+{%load static%}
+
+{%block contents%}
+
+<div class="home">
+		<div class="home_slider_container">
+
+			<!-- Home Slider -->
+			<div class="owl-carousel owl-theme home_slider">
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style=" background: 
+					linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), /* Overlay */
+					url({% static 'images/home_slider_1.jpg' %}) no-repeat center center; "></div>
+					<div class="home_slider_content">
+						<div class="container">
+							<div class="row">
+								<div class="col text-center">
+									<div class="home_slider_title">Students Engagment Detection </div>
+									<div class="home_slider_subtitle">by facial Expression and Machine Learning</div>
+									<div class="home_slider_form_container">
+										<p>
+                                            <font color="Black">In order to test its performance in learning contexts, an experiment, involving students attending an online lecture, was performed. The aim of the study was to compare the self-evaluation of the engagement perceived by the students with the one assessed by the model. During the experiment we collected videos of students behavior and, at the end of each session, we asked students to answer a questionnaire for assessing their perceived engagement. Then, the collected videos were analyzed automatically with a software that implements the model and provides an interface for the visual analysis of the model outcome. Results show that, globally, engagement prediction from students’ facial behavior was weakly correlated to their subjective answers. However, when considering only the emotional dimension of engagement, this correlation is stronger and the analysis of facial action units and head pose (facial movements) are positively correlated with it, while there is an inverse correlation with the gaze, meaning that the more the student’s feels engaged the less are the gaze movements.</font>
+                                        </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{%endblock%}
